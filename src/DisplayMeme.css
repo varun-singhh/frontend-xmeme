@@ -1,0 +1,167 @@
+.display-container
+{
+    margin-top: 20px;
+    max-height: 625px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.007); 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(102, 196, 250); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #acf1fd; 
+  }
+  .card-display{
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+  }
+  .card-body{
+    border: none;
+    font-size: larger;
+    color: rgb(42, 147, 165);
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .card-body>p{
+      color: cornsilk;
+      font-family: cursive;
+      font-size: x-large;
+  }
+  .bod{
+    font-family: cursive;
+    font-size: larger;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: fit-content;
+    padding: 10px;
+    background: linear-gradient(to right,  #4df3f3, #28a3db);
+    color: rgb(14, 14, 14);
+    margin-bottom: -35px;
+
+    
+  }
+  .card-header{
+    border: none;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .trash{
+    cursor: pointer;
+    font-size: large;
+    margin-left: 10px;
+    }
+.no-chat{
+    margin: 275px;
+    color: rgb(42, 147, 165);
+    font-family: cursive;
+    
+}
+.heading{
+    background-color: rgba(0, 0, 0, 0.144);
+    color: rgb(42, 147, 165);
+    font-family: fantasy;
+}
+
+/* popups */
+.overlay {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #243B55, #141E30);
+  transition: opacity 300ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-bottom: 50px;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.popup>h2{
+  color: rgb(42, 147, 165);
+  font-family: cursive;
+}
+.inpu{
+  padding: 10px;
+  margin: 10px;
+  background-color: #acf1fd00;
+  border-bottom: 1px solid rgb(42, 147, 165);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.inpu::placeholder{
+  color: #06d8d82c;
+}
+.butt{
+  width: 100%;
+  border: none;
+  background-color: rgb(42, 147, 165);
+  border-radius: 15px;
+  height: 40px;
+}
+.butt:hover{
+  background-color: rgb(58, 225, 255);
+
+}
